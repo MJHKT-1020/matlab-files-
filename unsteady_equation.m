@@ -1,8 +1,8 @@
 %% defining the mesh
-n=50;
+n=200;
 domain=1;
 h=domain/(n-1);
-dt=0.0001;
+dt=0.000001;
 alpha=dt/(h.^2);
 
 %% initialing the problem
@@ -13,7 +13,7 @@ ynew(n,n)=0;
 ynew(1,:)=1;
 
 error=1;
-error_req=1e-6;
+error_req=1e-7;
 iterations=0;
 error_track=0;
 
